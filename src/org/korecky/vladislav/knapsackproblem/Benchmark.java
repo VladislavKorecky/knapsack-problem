@@ -9,7 +9,7 @@ import org.korecky.vladislav.knapsackproblem.evolution.Solution;
  * Benchmark the genetic algorithm to see how close can it get to the best solution.
  */
 public class Benchmark {
-    final int epochs = 500;
+    final int generations = 500;
 
     final int maxItemCount = 100;
     final int itemCountIncrement = 10;
@@ -31,7 +31,7 @@ public class Benchmark {
 
         GeneticAlgorithm evolution = new GeneticAlgorithm(populationSize, items, maxWeight);
 
-        for (int i = 0; i < epochs; i++) {
+        for (int i = 0; i < generations; i++) {
             // test population and calculate the fitness values
             evolution.testPopulation();
 

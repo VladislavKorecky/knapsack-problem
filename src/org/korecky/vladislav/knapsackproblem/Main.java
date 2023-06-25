@@ -7,7 +7,7 @@ import org.korecky.vladislav.knapsackproblem.evolution.Solution;
 public class Main {
     public static void main(String[] args) {
         // CONFIG
-        final int epochs = 500;
+        final int generations = 500;
 
         final int itemCount = 100;
         final float maxWeight = 40;
@@ -23,7 +23,7 @@ public class Main {
         // EVOLUTION
         GeneticAlgorithm evolution = new GeneticAlgorithm(populationSize, items, maxWeight);
 
-        for (int i = 0; i < epochs; i++) {
+        for (int i = 0; i < generations; i++) {
             // test population and calculate the fitness values
             evolution.testPopulation();
 
